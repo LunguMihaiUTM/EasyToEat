@@ -1,6 +1,6 @@
 spring:
   application:
-    name: BusTicket
+    name: DesignPatterns
   datasource:
     url: jdbc:postgresql://localhost:5432/llc1
     username: root
