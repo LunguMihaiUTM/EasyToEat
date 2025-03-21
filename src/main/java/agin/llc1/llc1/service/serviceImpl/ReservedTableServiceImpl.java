@@ -10,6 +10,6 @@ public class ReservedTableServiceImpl implements TableService {
 
     @Override
     public void createTable() {
-        System.out.println("Table successfully create");;
+        System.out.println("TableDTO successfully create");;
     }
 }
