@@ -3,10 +3,12 @@ package agin.llc1.llc1.service.serviceImpl;
 import agin.llc1.llc1.builder.CategoryDirector;
 import agin.llc1.llc1.dto.CategoryDTO;
 import agin.llc1.llc1.entity.Category;
+import agin.llc1.llc1.flyweight.CategoryFlyweight;
 import agin.llc1.llc1.repository.CategoryRepository;
 import agin.llc1.llc1.service.CategoryService;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CategoryServiceImpl implements CategoryService {
 
@@ -41,4 +43,5 @@ public class CategoryServiceImpl implements CategoryService {
     public CategoryDTO cloneCategory(CategoryDTO categoryDTO) {
         return categoryDTO.clone();
     }
+
 }
