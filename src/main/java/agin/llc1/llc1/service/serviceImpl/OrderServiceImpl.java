@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
+// For Bridge
 public class OrderServiceImpl {
 
     private final WebPlatform webPlatform;
@@ -19,14 +20,12 @@ public class OrderServiceImpl {
         Platform platform;
         OrderType order;
 
-        // Determinăm platforma
         if (platformType.equalsIgnoreCase("web")) {
             platform = webPlatform;
         } else {
             platform = mobilePlatform;
         }
 
-        // Determinăm tipul de comandă
         if (orderType.equalsIgnoreCase("preorder")) {
             order = preOrder;
         } else if (orderType.equalsIgnoreCase("delivery")) {
